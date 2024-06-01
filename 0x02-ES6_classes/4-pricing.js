@@ -7,7 +7,7 @@ export default class Pricing {
   }
 
   set amount(newAmount) {
-    if (!(newAmount && typeof newAmount === 'number')) {
+    if (typeof newAmount !== 'number') {
       throw new TypeError('Amount must be a number');
     }
     this._amount = newAmount;
@@ -33,11 +33,11 @@ export default class Pricing {
   }
 
   static covertPrice(amount, convertionRate) {
-    if (!(amount && typeof amount === 'number')) {
+    if (typeof amount !== 'number') {
       throw new TypeError('Amount must be a number');
     }
 
-    if (!(convertionRate && typeof convertionRate === 'number')) {
+    if (typeof convertionRate !== 'number') {
       throw new TypeError('convertion rate must be a number');
     }
 
