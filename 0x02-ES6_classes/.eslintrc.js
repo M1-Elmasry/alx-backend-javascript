@@ -20,6 +20,7 @@ module.exports = {
   rules: {
     'no-console': 'off',
     'no-shadow': 'off',
+    "no-underscore-dangle": "off",
     'no-restricted-syntax': [
       'error',
       'LabeledStatement',

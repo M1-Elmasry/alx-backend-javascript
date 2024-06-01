@@ -1,5 +1,3 @@
-/* eslint-disable no-underscore-dangle */
-
 export default class ClassRooms {
   constructor(name, length, students) {
     this.name = name;
