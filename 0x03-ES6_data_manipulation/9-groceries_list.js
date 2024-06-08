@@ -6,6 +6,6 @@ export default function groceriesList() {
   groceryMap.set('Pasta', 1);
   groceryMap.set('Rice', 1);
   groceryMap.set('Banana', 5);
-  
+
   return groceryMap;
 }
