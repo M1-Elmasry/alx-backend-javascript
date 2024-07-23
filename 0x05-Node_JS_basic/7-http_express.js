@@ -73,6 +73,7 @@ app.get('/students', async (req, res) => {
       res.send(messages.join('\n'));
     })
     .catch((error) => {
+      res.statusCode = 500;
       res.send(error.message);
     });
 });
