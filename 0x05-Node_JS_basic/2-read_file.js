@@ -6,7 +6,10 @@ function csvToJson(data) {
   // remove the header line
   lines.shift();
   // transform lines to array of arrays of 4 fields
-  let fields = lines.map((item) => item.split(','));
+  let fields = lines.map((item) => item
+    .trim()
+    .split(',')
+    .map((item) => item.trim()));
   // remove empty lines if exists (will be array of one item '')
   fields = fields.filter((item) => item.length === 4);
 
