@@ -13,7 +13,7 @@ function calculateNumber(type, a, b) {
       break;
   }
 
-  // return 'Error: Unknown type';
+   return 'Error: Unknown type';
 }
 
 module.exports = calculateNumber;
