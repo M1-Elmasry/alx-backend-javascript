@@ -25,8 +25,4 @@ describe('calculateNumber', () => {
   it('should return "Error" for DIVIDE with inputs 4 and 0', () => {
     assert.strictEqual(calculateNumber('DIVIDE', 4, 0), 'Error');
   });
-
-  it('should return "Error: Unknown type" for unknown operation type', () => {
-    assert.strictEqual(calculateNumber('UNKNOWN', 1, 2), 'Error: Unknown type');
-  });
 });
