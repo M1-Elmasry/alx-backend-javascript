@@ -42,8 +42,8 @@ describe('calculateNumber - DIVIDE', () => {
     assert.strictEqual(calculateNumber('DIVIDE', 9.5, 2.2), 5);
   });
 
-  it('should return "Error" for DIVIDE with inputs 4 and 0', () => {
-    assert.strictEqual(calculateNumber('DIVIDE', 4, 0), 'Error');
+  it('should return "Error" for DIVIDE with inputs 4 and 0.2', () => {
+    assert.strictEqual(calculateNumber('DIVIDE', 4, 0.2), 'Error');
   });
 
   it('should return 2 for DIVIDE with inputs 4.5 and 2', () => {

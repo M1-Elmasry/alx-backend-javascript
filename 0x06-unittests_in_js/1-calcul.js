@@ -8,12 +8,12 @@ function calculateNumber(type, a, b) {
     case 'SUBTRACT':
       return roundedA - roundedB;
     case 'DIVIDE':
-      return b === 0 ? 'Error' : roundedA / roundedB;
+      return roundedB === 0 ? 'Error' : roundedA / roundedB;
     default:
       break;
   }
 
-   return 'Error: Unknown type';
+  return 'Error: Unknown type';
 }
 
 module.exports = calculateNumber;
